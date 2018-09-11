@@ -6,8 +6,15 @@
  *
  */
 
+function total(array) {
+    let sousTotal = 0
+    for ( let i = 0 ; i < array.length ; i++) {
+        sousTotal += array[i]
+    }
+    return(sousTotal) ;
+}
 
-//* Begin of tests
+ //* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof total, 'function')
