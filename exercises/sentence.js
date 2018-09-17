@@ -7,6 +7,19 @@
  */
 
 
+function sentence (arr) {
+    let str = '' ;
+
+    for (let i=0 ; i < arr.length ; i++) {
+        str += arr[i];
+        if (i === (arr.length - 1)) {
+            break ;
+        }
+        str += ' ' ;
+    }
+    return (str) ;
+ }
+
 //* Begin of tests
 const assert = require('assert')
 
